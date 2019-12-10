@@ -7,7 +7,7 @@ Provides a framework for a minimal non-server-based documentation website that c
 
 ## How to Edit This Site
 
-* Do not fork this repository, except when issuing new platform versions:
+* Do not fork this repository, except when issuing new versions:
   * Master branch contains latest documentation.
   * Forked branches contain previous documentation versions.
 * Once you have a local copy, either:

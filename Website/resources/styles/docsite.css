@@ -1,0 +1,40 @@
+﻿h1 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c6c8ca;
+    margin-bottom: 20px; 
+}
+
+h1.display-1, h1.display-2, h1.display-3, h1.display-4 {
+    margin-bottom: inherit;
+}
+
+div.container, div.container-fluid {
+    padding-bottom: 120px;
+}
+
+div.card {
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+
+a[target=_blank] {
+    padding-right: 14px;
+    background-image: url('../images/new-window.png');
+    background-repeat: no-repeat;
+    background-position: right 50%;
+}
+
+span.break {
+    padding-right: 14px;
+    background-image: url('../images/break.png');
+    background-repeat: no-repeat;
+    background-position: right 50%;
+}
+
+address span.break {
+    background-image: none;
+    padding-right: 0;
+}
+
+
