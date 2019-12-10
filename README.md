@@ -1,4 +1,4 @@
-DocSite
+The DocSite
 =======
 
 ## Introduction
