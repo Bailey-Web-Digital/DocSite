@@ -14,9 +14,9 @@ $(document).ready(function () {
     $('ul.navbar-nav').append('<li class="nav-item active"><a class="nav-link" href="menu3.html">Menu Page Three</a></li>');
 	
 	// Alerts:
-    $('body.success div.container h1:first').after('<div class="card border-success"><div class="card-body text-success"><h4 class="card-title">Sucess</h4><p class="card-text">Change this text by editing the docsite.js file.</p></div></div>');
-    $('body.warning div.container h1:first').after('<div class="card border-warning"><div class="card-body text-warning"><h4 class="card-title">Warning</h4><p class="card-text">Change this text by editing the docsite.js file.</p></div></div>');
-    $('body.danger div.container h1:first').after('<div class="card border-danger"><div class="card-body text-danger"><h4 class="card-title">Danger</h4><p class="card-text">Change this text by editing the docsite.js file.</p></div></div>');
+    $('body.success div.container h1:first').after('<div class="card border-success"><div class="card-body text-success"><h4 class="card-title">Sucess</h4><p class="card-text">Change this text by editing the resources/scripts/docsite.js file.</p></div></div>');
+    $('body.warning div.container h1:first').after('<div class="card border-warning"><div class="card-body text-warning"><h4 class="card-title">Warning</h4><p class="card-text">Change this text by editing the resources/scripts/docsite.js file.</p></div></div>');
+    $('body.danger div.container h1:first').after('<div class="card border-danger"><div class="card-body text-danger"><h4 class="card-title">Danger</h4><p class="card-text">Change this text by editing the resources/scripts/docsite.js file.</p></div></div>');
 	$('body:not(.intro) div.container').append('<div class="card border-danger"><div class="card-body text-danger"><h4 class="card-title">Important Notice</h4><p class="card-text">Do not include <strong>any</strong> usernames or passwords in this site! Store them in an encrypted password manager instead.</p></div></div>');
 	
 	// Main content row and column:
@@ -40,8 +40,8 @@ $.expr[':'].external = function (obj) {
 // Run once page and linked resources have finished loading:
 $(document).ready(function () {
     // Insert page H1 title into document title:
-    if($('h1:first').text() != 'The SPHERE MegaDoc') {
-    	$(document).prop('title', 'SPHERE MegaDoc: ' + $('h1:first').text() );
+    if ($('h1:first').text() != 'The DocSite') {
+        $(document).prop('title', 'The DocSite: ' + $('h1:first').text() );
     }
     // Remove empty paragraphs from pages:
     $('p').each(function () {
