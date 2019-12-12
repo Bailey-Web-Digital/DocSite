@@ -21,11 +21,10 @@
     <p class="lead">Provides a framework for a minimal non-server-based documentation website that can be stored offline.</p>
 
     <h2>Table of Contents</h2>
-
     <ul>
-        <li><a href="menu1.html">Menu Page One</a></li>
-        <li><a href="menu2.html">Menu Page Two</a></li>
-        <li><a href="menu3.html">Menu Page Three</a></li>
+        <li><a href="menu1.html">Example Menu Page One</a></li>
+        <li><a href="menu2.html">Example Menu Page Two</a></li>
+        <li><a href="menu3.html">Example Menu Page Three</a></li>
     </ul>
 
     <hr />
@@ -49,9 +48,65 @@
         <li>Use <a href="https://getbootstrap.com/docs/4.4/getting-started/introduction/">Bootstrap</a> style classes to format text.</li>
         <li>Do not edit <strong>any</strong> of the HTML code within the <code>&lt;head&gt;</code> tags.</li>
         <li>Do not use <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code> tags, unless absolutely necessary.</li>
-        <li>Do not attach any non-image files to pages (e.g.. PDF or Word documents). Copy text into the HTML web pagesand format it appropriately.
+        <li>Do not attach any non-image files to pages (e.g.. PDF or Word documents). Copy text into the HTML web 
+		pages and format it appropriately.
         </li>
     </ul>
+    
+	<h2>Headers and Footers</h2>
+	<p>To change the headers and footers of the pages, you'll need to edit the 
+	<kbd>~/DocSite/Website/resources/scripts/docsite.js</kbd> file. This JavaScript file 
+	uses JQuery to inject the appropriate HTML for a
+	<a href="https://getbootstrap.com/docs/4.4/components/navbar/">
+	Bootstrap Navbar</a> that collapses into a dropdown menu when viewed on 
+	small-screen 
+	devices.</p>
+	<p>You can change the links in the Navbar by editing the HTML added using 
+	the following command:</p>
+	<ul>
+		<li><code>$('ul.navbar-nav').append([...]);</code></li>
+	</ul>
+	
+	<h2>Success / Warning / Danger Cards</h2>
+	<p>On the <a href="example-page.html">Example Page</a> provided, you will 
+	see three cards displayed above the main text block. These are also added 
+	using a JQuery command in the 
+	<kbd>~/DocSite/Website/resources/scripts/docsite.js</kbd> file. This command 
+	looks for a class attribute trigger value in the <code>&lt;body&gt;</code> 
+	tag, like this: <code>&lt;body class="success warning danger"&gt;</code>, and 
+	adds the requested cards.</p>
+	<p>You can change what appears in the cards by editing the HTML added using 
+	the following commands:</p>
+	<ul>
+		<li><code>$('body.success div.container h1:first').after([...]);</code></li>
+		<li><code>$('body.warning div.container h1:first').after([...]);</code></li>
+		<li><code>$('body.danger div.container h1:first').after([...]);</code></li>
+	</ul>
+	
+	<h2>Password / Important Notice Card</h2>
+	<p>On the <a href="example-page.html">Example Page</a> provided, you will 
+	also see one card displayed below the main text block, currently used to add 
+	a warning message about not including passwords in documentation. Again, 
+	this is added 
+	using a JQuery command in the 
+	<kbd>~/DocSite/Website/resources/scripts/docsite.js</kbd> file. This command 
+	adds the card to every page in the site, <strong>unless</strong> there is a class attribute 
+	trigger value in the <code>&lt;body&gt;</code> tag, like this: <code>&lt;body 
+	class="intro"&gt;</code>, indicating that this is an introductiory page.</p>
+	<p>You can change what appears in the card by editing the HTML added using 
+	the following command:</p>
+	<ul>
+		<li><code>$('body:not(.intro) div.container').append([...]);</code></li>
+	</ul>
+	
+	<hr/>
+	
+	<h2>Contact the Developer</h2>
+	<p>The DocSite was created by David Bailey from
+	<a href="https://baileyweb.online/">Bailey Web &amp; Digital</a>, and is 
+	released under an <a href="https://opensource.org/licenses/mit-license.php">
+	MIT Licence</a>. The source code is
+	<a href="https://github.com/Bailey-Web-Digital/DocSite">available on GitHub</a>.</p>
 </body>
 
 </html>
