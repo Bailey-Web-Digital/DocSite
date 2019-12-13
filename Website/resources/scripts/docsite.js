@@ -26,7 +26,7 @@ $(document).ready(function () {
 	$('div#content').wrapInner('<div class="col" />');
 	
 	// Footer bar:
-	$('body').append('<div id="footer"><nav class="navbar fixed-bottom navbar-light bg-light"><p class="text-muted">&copy; <a href="https://baileyweb.online/">Bailey Web &amp; Digital</a>. Frameworks: <a href="https://api.jquery.com/">JQuery v3.4.1</a>, <a href="https://popper.js.org/">Popper.js v1.16.0</a>, <a href="https://getbootstrap.com/docs/4.4/getting-started/introduction/">Bootstrap v4.4.0</a>.</p></nav></div>');
+    $('body').append('<div id="footer"><nav class="navbar fixed-bottom navbar-light bg-light"><p class="text-muted">&copy; <a href="https://baileyweb.online/">Bailey Web &amp; Digital</a>. Frameworks: <a href="https://api.jquery.com/">JQuery v3.4.1</a>, <a href="https://popper.js.org/">Popper.js v1.16.0</a>, <a href="https://getbootstrap.com/docs/4.4/getting-started/introduction/">Bootstrap v4.4.0</a>. Created with <a href="https://github.com/Bailey-Web-Digital/DocSite">DocSite</a>.</p></nav></div>');
 });
 
 // Expression to find external hyperlinks:
